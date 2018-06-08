@@ -1,0 +1,30 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poletti99/challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Poletti99/challenge/issues"
+  },
+  "homepage": "https://github.com/Poletti99/challenge#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "webpack-cli": "^3.0.3",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-hot-middleware": "^2.22.2"
+  }
+}
