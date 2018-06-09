@@ -3,7 +3,7 @@ var path = require('path');
 
 const config = {
   mode: 'production',
-  entry: './src/main',
+  entry: './src/main.js',
   output: {
     filename: 'bundle.js',
     path: path.join(__dirname, "dist")
