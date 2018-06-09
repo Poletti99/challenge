@@ -52,4 +52,54 @@ describe("Math Library", () => {
             });
         });
     });
+    describe('Mult', () => {
+        context('Mult with good values', () => {
+            it('Should return 4 when receive 2,2', () => {
+                expect(mult(2, 2)).to.be.equal(4);
+            });
+
+            it('Should return -8 when receive -4,2', () => {
+                expect(mult(-4, 2)).to.be.equal(-8);
+            });
+        });
+
+        context('Mult with bad values', () => {
+            it('Should return Erro when receive a,2', () => {
+                expect(mult('a', 2)).to.be.equal('Erro');
+            });
+
+            it('Should return Erro when receive 2,a', () => {
+                expect(mult('a', 2)).to.be.equal('Erro');
+            });
+
+            it('Should return Erro when receive a,a', () => {
+                expect(mult('a', 'a')).to.be.equal('Erro');
+            });
+        });
+    });
+    describe('Div', () => {
+        context('Div with good values', () => {
+            it('Should return 4 when receive 8,2', () => {
+                expect(div(8, 2)).to.be.equal(4);
+            });
+
+            it('Should return -8 when receive -16,2', () => {
+                expect(div(-16, 2)).to.be.equal(-8);
+            });
+        });
+
+        context('Div with bad values', () => {
+            it('Should return Erro when receive a,2', () => {
+                expect(div('a', 2)).to.be.equal('Erro');
+            });
+
+            it('Should return Erro when receive 2,a', () => {
+                expect(div('a', 2)).to.be.equal('Erro');
+            });
+
+            it('Should return Erro when receive a,a', () => {
+                expect(div('a', 'a')).to.be.equal('Erro');
+            });
+        });
+    });
 });
